@@ -1,0 +1,6 @@
+﻿services:
+  aiexampart2:
+    image: aiexampart2
+    build:
+      context: .
+      dockerfile: AIExamPart2/Dockerfile
