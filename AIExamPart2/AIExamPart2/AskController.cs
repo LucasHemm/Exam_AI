@@ -12,7 +12,7 @@ namespace AIExamPart2
     {
         private readonly HttpClient _httpClient;
         private const string OpenWebUiUrl = "http://localhost:3000/api/chat/completions";
-        private const string BearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjAyNmE0MjVjLTQ0MGItNDU0MC1hMDMxLWMzODI5NGUzN2YzOSJ9.wG_BrdqLSYouYJuP7N5JVtTZ8t72R5UIlX53sI_kdyw";
+        private const string BearerToken = "";
 
         public AskController(IHttpClientFactory httpClientFactory)
         {
