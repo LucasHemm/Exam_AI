@@ -16,7 +16,7 @@ namespace AIExamPart2
 
         public AskController(IHttpClientFactory httpClientFactory)
         {
-            _httpClient = httpClientFactory.CreateClient();
+            _httpClient = httpClientFactory.CreateClient("OpenWebUI");
         }
 
         [HttpPost("basic")]

@@ -12,7 +12,10 @@ namespace AIExamPart2
 
             // Register services before building the app
             builder.Services.AddControllers();
-            builder.Services.AddHttpClient();
+            builder.Services.AddHttpClient("OpenWebUI", client =>
+            {
+                client.Timeout = TimeSpan.FromMinutes(5); 
+            });            
             builder.Services.AddAuthorization();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
